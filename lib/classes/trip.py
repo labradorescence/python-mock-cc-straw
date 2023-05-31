@@ -27,7 +27,7 @@ class Trip:
     @visitor.setter
     def visitor(self, visitor):
         from classes.visitor import Visitor
-        if isinstance(visitor, Visitor):
+        if visitor and isinstance(visitor, Visitor):
             self._visitor = visitor
         else:
             raise Exception

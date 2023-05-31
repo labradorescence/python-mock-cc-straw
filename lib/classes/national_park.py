@@ -30,7 +30,7 @@ class NationalPark:
     
     def visitors(self, new_visitor=None):
         from classes.visitor import Visitor
-        if new_visitor and new_visitor not in self._visitors and isinstance(new_visitor, Visitor) :
+        if new_visitor and isinstance(new_visitor, Visitor) and new_visitor not in self._visitors:
             self._visitors.append(new_visitor)
         return self._visitors
     
