@@ -84,5 +84,3 @@ class TestVisitor:
 
         assert (isinstance(vis.national_parks()[0], NationalPark))
         assert (isinstance(vis.national_parks()[1], NationalPark))
-
-    
